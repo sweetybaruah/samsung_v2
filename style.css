@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    
+}
+.absolute{
+    position: absolute;
+}
+.hidden{
+    display: none;
+}
+.wrapper{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background: url('./images/Slide1/mainbg.jpg')
+    /* background: url('./images/img1.jpg'); */
+}
+.element1{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+.element2{
+    position: absolute;
+    width: 35px;
+    height: 29px;
+    top: 217px;
+    left: 125px;
+    z-index: 99;
+}
+.element3{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+.element4{
+    position: absolute;
+    width: 160px;
+    height: 42px;
+    top: 140px;
+    left: 70px;
+    z-index: 2;
+}
+.element5{
+    position: absolute;
+    width: 301px;
+    height: 37px;
+    top: 213px;
+    left: 0px;
+}
+.element6{
+    position: absolute;
+    width: 96px;
+    height: 24px;
+    top: 118px;
+    left: 110px;
+}
+.element7{
+    position: absolute;
+    width: 274px;
+    height: 57px;
+    top: 154px;
+    left: 16px;
+}
+canvas{
+    background:#ffffff00;
+    top: 0px;
+    left:0px;
+    opacity: 0;
+  }
+  .swipe{
+    left: 121px !important;
+    top: 130px;
+    width: 77px;
+    height: 76px;
+    transition: left .3s, width 1s, top .3s;
+    scale: .6;
+  }
+
+@keyframes swipe{
+    25%{
+        top: 206px;
+        /* left: 101px; */
+    }
+    50%{
+        top: 195px;
+        /* left: 79px; */
+    }
+    100%{
+        top: 165px;
+        opacity: 0;
+        /* left: 67px; */
+    }
+}
+
+.pluse{
+    animation: pluse 1s infinite;
+}
+@keyframes pluse{
+   50%{
+    scale: .87;
+   }
+   75%{
+    sacle: .96;
+   }
+   100%{
+    scale: 1;
+   }
+
+}
+  
